@@ -1,0 +1,33 @@
+html
+head
+	title kwangho test
+	script(src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous")
+	script(src="https://cdn.socket.io/socket.io-1.4.5.js")
+
+
+body
+	h1 hello
+
+	div.inner.cover
+		div#content
+			div#room
+			div#room-list
+			div#user-list
+			div#messages
+
+		form#send-form
+			input#send-message
+			button#send-button(type='submit') Send
+			div#help Chat commands
+				ul
+					li Change Nickname :
+						code /nick [user name]
+					li Join/Create room :
+						code /join [room name]
+
+		button#enter enter!!
+
+
+
+	
+	script(src='/js/chat/chat.js')
